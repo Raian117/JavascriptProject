@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | Personal Finance tracker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <script src="/script.js"></script>
+        <div class="navMenu">
+        <ul>
+            <li class="text"><a href="/index.html">Dashboard</a></li>
+            <li class="text"><a href="/assects/pages/income.html">Income</a></li>
+            <li class="text"><a href="/assects/pages/expenses.html">Expenses</a></li>
+            <li class="text"><a href="/assects/pages/budgetPlanner.html">Budget Planner</a></li>
+            <li class="text"><a href="/assects/pages/savingsGoals.html">Savings Goals</a></li>
+            <li class="text"><a href="/assects/pages/reports.html">Reports</a></li>
+        </ul>
+        <span class="navTitle">Personal Finance Tracker</span>
+    </div>
+    <div class="intro">
+        <h1 class="title">Reports</h1>
+        <p class="pageInfo">View and analyze your financial data through comprehensive reports.</p>
+    </div>
+    <div class="incomeRowOne rowOne">
+        <div class="totalIncome incomeTopBox">
+            <table class="incomeSummaryCard card">
+                <thead>
+                    <th>Financial Report</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="summaryName itemName">Total Income</td>
+                        <td id="totalIncomeSummary" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Total Expenses</td>
+                        <td id="totalExpenseSummary" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Current Balance</td>
+                        <td id="currentBalanceSummary" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Current Budget</td>
+                        <td id="currentBudgetSummary" class="value">$0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="totalIncome incomeTopBox">
+            <table class="incomeSummaryCard card">
+                <thead>
+                    <th>Budget Report</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="summaryName itemName">Budget Used</td>
+                        <td id="budgetUsedPercentage" class="value">0%</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Budget Remaining</td>
+                        <td id="remainingBudgetPercentage" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Budget Status</td>
+                        <td id="currentBudgetSummary" class="value">statuses</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="totalIncome incomeTopBox">
+            <table class="healthMeterCard card">
+                <thead>
+                    <th>Financial Health Meter</th>
+                </thead>
+                <tbody>
+                    <tr id="excellenthealth">
+                        <td class="healthName itemName">Excellent</td>
+                    </tr>
+                    <tr id="goodHealth">
+                        <td class="healthName itemName">Good</td>
+                    </tr>
+                    <tr id="fairHealth">
+                        <td class="healthName itemName">Fair</td>
+                    </tr>
+                    <tr id="badHealth">
+                        <td class="healthName itemName">Needs Improvment</td>
+                    </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

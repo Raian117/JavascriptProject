@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Goals | Personal Finance tracker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <script src="/script.js"></script>
+        <div class="navMenu">
+        <ul>
+            <li class="text"><a href="/index.html">Dashboard</a></li>
+            <li class="text"><a href="/assects/pages/income.html">Income</a></li>
+            <li class="text"><a href="/assects/pages/expenses.html">Expenses</a></li>
+            <li class="text"><a href="/assects/pages/budgetPlanner.html">Budget Planner</a></li>
+            <li class="text"><a href="/assects/pages/savingsGoals.html">Savings Goals</a></li>
+            <li class="text"><a href="/assects/pages/reports.html">Reports</a></li>
+        </ul>
+        <span class="navTitle">Personal Finance Tracker</span>
+    </div>
+    <div class="intro">
+        <h1 class="title">Savings Goals</h1>
+        <p class="pageInfo">Set and track your savings goals effectively.</p>
+    </div>
+    <div class="incomeRowOne rowOne">
+        <div class="addIncomeBox">
+            <div class="addIncomeTitle">
+                <h3>Add Savings Goals</h3>
+            </div>
+            <div class="incomeInputs incomeTopBox">
+                <form id="goalForm" class="inputForm" action="#">
+                    <label for="incomeSource">Goal Name</label>
+                    <input type="text" name="incomeSource" id="goalNameInput" placeholder="Gaming PC" required>
+                    <label for="targetAmount">Target Amount</label>
+                    <input type="number" name="targetAmount" id="targetAmountInput" placeholder="1200" required>
+                    <label for="targetAmount">Current Saved Amount</label>
+                    <input type="number" name="currentSavedAmount" id="currentSavedAmount" placeholder="450" required>
+                    <input type="submit" value="Save Goal">
+                </form>
+            </div>
+        </div>
+        <div class="totalIncome incomeTopBox">
+            <table class="incomeSummaryCard card">
+                <thead>
+                    <th>Savings Summary</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="summaryName itemName">Current Goal</td>
+                        <td id="goalNameValue" class="value">Goal Name</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Target Amount</td>
+                        <td id="incomeEntrySummary" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Saved Amount</td>
+                        <td id="savedAmount" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Remaining Amount</td>
+                        <td id="remainingAmount" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Progress</td>
+                        <td id="savingsProgress" class="value">0%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

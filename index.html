@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Personal Finance tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <div class="navMenu">
+        <ul>
+            <li class="text"><a href="index.html">Dashboard</a></li>
+            <li class="text"><a href="/assects/pages/income.html">Income</a></li>
+            <li class="text"><a href="/assects/pages/expenses.html">Expenses</a></li>
+            <li class="text"><a href="/assects/pages/budgetPlanner.html">Budget Planner</a></li>
+            <li class="text"><a href="/assects/pages/savingsGoals.html">Savings Goals</a></li>
+            <li class="text"><a href="/assects/pages/reports.html">Reports</a></li>
+        </ul>
+        <span class="navTitle">Personal Finance Tracker</span>
+    </div>
+    <div class="intro">
+        <h1 class="title">Welcome to your finance tracker Dashboard</h1>
+        <p class="pageInfo">Track your income, expenses, budget, and savings in one place.</p>
+    </div>
+    <div class="rowOne">
+        <table class="summaryCard card">
+            <thead>
+                <th>Summary</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="summaryName itemName">Total Income</td>
+                    <td class="value totalIncome" id="totalIncomeValue">$0</td>
+                </tr>
+                <tr>
+                    <td class="summaryName itemName">Total Expenses</td>
+                    <td class="value totalExpenses" id="expensesValue">$0</td>
+                </tr>
+                <tr>
+                    <td class="summaryName itemName">Current Balance</td>
+                    <td class="value currentBalance" id="balanceValue">$0</td>
+                </tr>
+                <tr>
+                    <td class="summaryName itemName">Savings Goal Progress</td>
+                    <td class="value savingsGoalProgress" id="goalValue">0%</td >
+                </tr>
+            </tbody>
+        </table>
+        <table class="healthMeterCard card">
+            <thead>
+                <th>Financial Health Meter</th>
+            </thead>
+            <tbody>
+                <tr id="excellenthealth" class="excellentHealth">
+                    <td class="healthName itemName">Excellent</td>
+                </tr>
+                <tr id="goodHealth" class="goodHealth">
+                    <td class="healthName itemName">Good</td>
+                </tr>
+                <tr id="fairHealth" class="fairHealth">
+                    <td class="healthName itemName">Fair</td>
+                </tr>
+                <tr id="badHealth" class="badHealth">
+                    <td class="healthName itemName">Needs Improvment</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="budgetCard card">
+            <thead>
+                <th>Budget Status</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="itemName statusName">Monthly Budget</td>
+                    <td class="value monthlyBudgetValue" id="monthlyBudget">$0</td>
+                </tr>
+                <tr>
+                    <td class="itemName spentName">Spent</td>
+                    <td class="value spentValue" id="spentValue">$0</td>
+                </tr>
+                <tr>
+                    <td class="itemName remainingName">Remaining</td>
+                    <td class="value remainingValue" id="remainingValue">$0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="rowTwo">
+        <div class="activityTitle"><h2>Recent Activities</h2></div>
+        <div class="activityBottomBoxes">
+            <div class="activityBBOne">
+                <div class="activities">
+                    <b><span class="activityItem" id="activityOne">ItemOne</span><span id="activityOneValue">$0</span></b>
+                    <b><span class="activityItem" id="activityTwo">ItemTwo</span><span id="activityTwoValue">$0</span></b>
+                    <b><span class="activityItem" id="activityThree">ItemThree</span><span id="activityThreeValue">$0</span></b>
+                    <b><span class="activityItem" id="activityFour">ItemFour</span><span id="activityFourValue">$0</span></b>
+                </div>
+            </div>
+            <div class="activityBBTwo">
+                <table class="savingsGoalCard card">
+                    <thead>
+                        <th>Savings Goal</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Goal Name</td>
+                            <td id="goalName">Goal</td>
+                        </tr>
+                        <tr>
+                            <td>Target Amount</td>
+                            <td id="targetValue">Target</td>
+                        </tr>
+                        <tr>
+                            <td>Saved Amount</td>
+                            <td id="savedValue">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Progress</td>
+                            <td id="goalProgressValue">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

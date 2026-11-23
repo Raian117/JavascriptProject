@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses | Personal Finance tracker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <script src="/script.js"></script>
+        <div class="navMenu">
+        <ul>
+            <li class="text"><a href="/index.html">Dashboard</a></li>
+            <li class="text"><a href="/assects/pages/income.html">Income</a></li>
+            <li class="text"><a href="/assects/pages/expenses.html">Expenses</a></li>
+            <li class="text"><a href="/assects/pages/budgetPlanner.html">Budget Planner</a></li>
+            <li class="text"><a href="/assects/pages/savingsGoals.html">Savings Goals</a></li>
+            <li class="text"><a href="/assects/pages/reports.html">Reports</a></li>
+        </ul>
+        <span class="navTitle">Personal Finance Tracker</span>
+    </div>
+    <div class="intro">
+        <h1 class="title">Expenses</h1>
+        <p class="pageInfo">Track and manage your expenses effectively.</p>
+    </div>
+        <div class="incomeRowOne rowOne">
+        <div class="addIncomeBox">
+            <div class="addIncomeTitle">
+                <h3>Add Expenses</h3>
+            </div>
+            <div class="incomeInputs incomeTopBox">
+                <form id="expenseForm" class="inputForm" action="#">
+                    <label for="incomeSource">Expense Sources</label>
+                    <input type="text" name="incomeSource" id="expenseSource" placeholder="Type your expense sources" required>
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="expenseAmountInput" placeholder="500" required>
+                    <label for="category">Category</label>
+                    <select name="category" id="expenseCategoryInput" required>
+                        <option value="food">Food</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="education">Education</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="submit" value="Add Expenses">
+                </form>
+            </div>
+        </div>
+        <div class="totalIncome incomeTopBox">
+            <table class="incomeSummaryCard card">
+                <thead>
+                    <th>Expenses Summary</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="summaryName itemName">Total Expense</td>
+                        <td id="incomeValueOne" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Total Number of Entries</td>
+                        <td id="incomeEntrySummary" class="value">0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Average Expense</td>
+                        <td id="largestIncomeSummary" class="value">$0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

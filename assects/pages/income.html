@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income | Personal Finance tracker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <script src="/script.js" defer></script>
+        <div class="navMenu">
+        <ul>
+            <li class="text"><a href="/index.html">Dashboard</a></li>
+            <li class="text"><a href="/assects/pages/income.html">Income</a></li>
+            <li class="text"><a href="/assects/pages/expenses.html">Expenses</a></li>
+            <li class="text"><a href="/assects/pages/budgetPlanner.html">Budget Planner</a></li>
+            <li class="text"><a href="/assects/pages/savingsGoals.html">Savings Goals</a></li>
+            <li class="text"><a href="/assects/pages/reports.html">Reports</a></li>
+        </ul>
+        <span class="navTitle">Personal Finance Tracker</span>
+    </div>
+    <div class="intro">
+        <h1 class="title">Income</h1>
+        <p class="pageInfo">Track and manage your income sources effectively.</p>
+    </div>
+    <div class="incomeRowOne rowOne">
+        <div class="addIncomeBox">
+            <div class="addIncomeTitle">
+                <h3>Add Income</h3>
+            </div>
+            <div class="incomeInputs incomeTopBox">
+                <form id="incomeForm" class="inputForm" action="#">
+                    <label for="incomeSource">Income Source</label>
+                    <input type="text" name="incomeSource" id="incomeSource" placeholder="Type your income source" required>
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="incomeAmountInput" placeholder="500" required>
+                    <label for="category">Category</label>
+                    <select name="category" id="incomeCategoryInput" required>
+                        <option value="job">Job</option>
+                        <option value="gift">Gift</option>
+                        <option value="sideHustle">Side Hustle</option>
+                        <option value="allowance">Allowance</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="submit" id="incomeSubmit" value="Add Income">
+                </form>
+            </div>
+        </div>
+        <div class="totalIncome incomeTopBox">
+            <table class="incomeSummaryCard card">
+                <thead>
+                    <th>Income Summary</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="summaryName itemName">Total Income</td>
+                        <td id="incomeValueOne" class="value">$0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Total Number of Entries</td>
+                        <td id="incomeEntrySummary" class="value">0</td>
+                    </tr>
+                    <tr>
+                        <td class="summaryName itemName">Average Income</td>
+                        <td id="largestIncomeSummary" class="value">$0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
